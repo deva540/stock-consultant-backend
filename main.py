@@ -10,6 +10,7 @@ app = FastAPI()
 # Configure CORS to allow communication from your frontend
 origins = [
     "http://localhost:5173",  # Your React app's URL
+    "stock-consultant-frontend.vercel.app",
 ]
 app.add_middleware(
     CORSMiddleware,
